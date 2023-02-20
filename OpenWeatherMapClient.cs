@@ -59,7 +59,6 @@ namespace WetterAppDL
                                     Console.WriteLine("Max Temperatur:  " + myDeserializedClass.list[i].main.temp_max);
                                     Console.WriteLine("Bewölkung:  " + myDeserializedClass.list[i].main.humidity);
                                     Console.WriteLine("hPa:  " + myDeserializedClass.list[i].main.pressure);
-                                    //Console.WriteLine("Regenmenge in mm letzten 3 Std: " + myDeserializedClass.list[i].rain);
 
                                     if (myDeserializedClass.list[i].Equals("rain"))
                                     {
@@ -71,11 +70,7 @@ namespace WetterAppDL
                                     }
 
                                     Console.WriteLine("Windgeschwindigkeit:  " + myDeserializedClass.list[i].wind.speed);
-                                    //Console.WriteLine(string.Concat(Enumerable.Repeat("=", 50)));
                                 }
-
-
-
                                 // beschreibung.setBeschreibung(parser.parseBeschreibung(myDeserializedClass));
                                 // beschreibung.setTemperatur(parser.parseTemeratur(myDeserializedClass));
                                 // beschreibung.setMinTemperatur(parser.parseMinTemperatur(myDeserializedClass));
