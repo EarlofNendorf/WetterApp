@@ -41,7 +41,7 @@ namespace WetterAppDL
         private void zeigWetter(string stadt, OpenWeatherMapClient client)
         {
             var test = client.GetWetterResponseAsync(stadt, new HttpClient());
-            Console.WriteLine(test.Result);
+            //Console.WriteLine(test.Result);
             Console.ReadLine();
         }
     }

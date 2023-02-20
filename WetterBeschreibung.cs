@@ -18,6 +18,8 @@ namespace WetterAppDL
         private string bewoelkung;
         private string regenmenge;
 
+        private string datum;
+
         internal void setBeschreibung(string beschreibung)
         {
             this.beschreibung = beschreibung;
@@ -57,10 +59,16 @@ namespace WetterAppDL
             this.regenmenge= regenmenge;
         }
 
+        internal void setDatum(string datum)
+        {
+            this.datum = datum;
+        }
+
 
         public override string ToString()
         {
-            return "Wetter:              " + beschreibung + Environment.NewLine +
+            return "Wettermessung vom    " + datum + Environment.NewLine +
+                    "Wetter:              " + beschreibung + Environment.NewLine +
                    "Temperatur beträgt:  " + temperatur + " Grad " + Environment.NewLine +
                    "Min-Temp:            " + mintemperatur + " Grad " + Environment.NewLine +
                    "Max-Temp:            " + maxtemperatur + " Grad " + Environment.NewLine +
